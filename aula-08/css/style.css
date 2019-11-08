@@ -1,0 +1,125 @@
+
+
+Body{
+    display: grid;
+    grid-template-areas: 'navbar'
+                          'banner'
+                          'main'
+                          'section'
+                          'contact'
+                          'footer';
+                          
+    grid-template-columns: 100% ;
+}
+
+nav{
+    grid-area: 'navbar';
+    background-color: white;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    height: 85px;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Dosis', sans-serif;
+}
+nav img{
+    width: 50px;
+    
+}
+
+nav div:nth-child(2){
+    display: none;
+
+}
+
+nav div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 400px;
+    height: 20px;
+
+}
+
+header{
+
+    background-image: url('../imagem/arroz1.jpg');
+    background-size: cover;
+    height: 450px;
+}
+
+/* =============SECTION GERAL=============== */
+
+section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:;
+}
+
+input{
+    cursor: pointer;
+}
+
+nav a:hover{
+    background-color: green;
+}
+}
+
+/* =====CABEÇALHO====== */
+
+
+#cabecalho {
+    grid-area: main;
+    background-color: #00FF80;
+}
+
+#cabecalho h1, #cabecalho h2 {
+    text-align: center;
+    color: #000000;
+}
+
+.titulo {
+    text-transform: uppercase;
+    font-size: 45px;
+    letter-spacing: 3px;
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+
+.subtitulo {
+    width: 350px;
+}
+
+
+
+
+
+
+/*==================REPONSIVO============*/
+
+@media (max-width: 800px){
+    nav div:nth-child(2){
+        display: inline-block;
+    }
+    nav div:nth-child(3){
+        display: none;
+    }
+    .menu{
+        width: 50px;
+    }
+    header{
+
+    }
+    
+}
+
+
+
